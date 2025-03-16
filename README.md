@@ -4,6 +4,10 @@ This repository contains a collection of Nuclei plugins designed to audit Chrome
 
 The plugins also provide guidelines for secure coding practices, such as limiting the use of externally connectable fields, using content scripts carefully, and minimizing the list of web-accessible resources. Additionally, they offer tools to identify and mitigate potential false positives, such as improperly implemented Cross-Origin Resource Sharing (CORS), and to ensure the inclusion of an explicit content security policy in the extension's manifest. The severity of the issues addressed by these plugins ranges from low to medium.
 
+**Introduction to Chrome Browser Extension Security Testing**
+
+https://www.cobalt.io/blog/introduction-to-chrome-browser-extension-security-testing
+
 ## Technologies and Frameworks
 
 The plugins in this repository are written in YAML and JSON, and are designed to be used with the Nuclei tool. They make extensive use of regular expressions for pattern matching and extraction. The plugins are designed to audit Chrome extensions, and as such, they deal with JavaScript and JSON files. The author of several of these plugins is nullenc0de.
@@ -18,7 +22,8 @@ Follow the steps below to install and start working with the project:
 
 3. **Execute the Nuclei tool** with the following command:
 ```
-nuclei -target /chrome-ext -t ./templates
+echo chrome-ext | nuclei -file -t ChromeAudit/ -itags keys
 ```
 
 Replace `/chrome-ext` with the path to the unzipped extension's files.
+
