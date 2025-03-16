@@ -10,7 +10,8 @@ file:
   - extensions:
       - js
       - json
-    
+      
+    matchers-condition: and
     matchers:
       - type: regex
         regex:
