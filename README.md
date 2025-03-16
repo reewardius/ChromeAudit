@@ -1,12 +1,12 @@
 # Overview
 
-This repository contains a collection of Nuclei plugins designed to audit Chrome extensions for potential security vulnerabilities. The plugins are designed to identify and mitigate a variety of issues, including the misuse of wildcards in manifest files, improper sanitization of inputs, the use of potentially dangerous JavaScript methods such as `document.write()` and `innerHTML`, and more. Each plugin provides a detailed explanation of the issue it addresses, along with code examples and regular expressions to identify and extract relevant code snippets.
-
-The plugins also provide guidelines for secure coding practices, such as limiting the use of externally connectable fields, using content scripts carefully, and minimizing the list of web-accessible resources. Additionally, they offer tools to identify and mitigate potential false positives, such as improperly implemented Cross-Origin Resource Sharing (CORS), and to ensure the inclusion of an explicit content security policy in the extension's manifest. The severity of the issues addressed by these plugins ranges from low to medium.
-
 **Introduction to Chrome Browser Extension Security Testing**
 
 https://www.cobalt.io/blog/introduction-to-chrome-browser-extension-security-testing
+
+This repository contains a collection of Nuclei plugins designed to audit Chrome extensions for potential security vulnerabilities. The plugins are designed to identify and mitigate a variety of issues, including the misuse of wildcards in manifest files, improper sanitization of inputs, the use of potentially dangerous JavaScript methods such as `document.write()` and `innerHTML`, and more. Each plugin provides a detailed explanation of the issue it addresses, along with code examples and regular expressions to identify and extract relevant code snippets.
+
+The plugins also provide guidelines for secure coding practices, such as limiting the use of externally connectable fields, using content scripts carefully, and minimizing the list of web-accessible resources. Additionally, they offer tools to identify and mitigate potential false positives, such as improperly implemented Cross-Origin Resource Sharing (CORS), and to ensure the inclusion of an explicit content security policy in the extension's manifest. The severity of the issues addressed by these plugins ranges from low to medium.
 
 ## Technologies and Frameworks
 
